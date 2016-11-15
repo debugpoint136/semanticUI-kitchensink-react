@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Header';
+import { Divider } from 'semantic-ui-react'
 import Kitchen from './Kitchen';
+import LabelExampleRibbon from './LabelExampleRibbon';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h5>Welcome to React</h5>
-        </div>
+      <div>
+        <Header />
         <Kitchen />
+        <Divider clearing hidden />
+        <LabelExampleRibbon />
       </div>
     );
   }
